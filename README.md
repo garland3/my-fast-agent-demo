@@ -63,3 +63,4 @@ ollama run qwen3:0.6b
 - `.env` - Environment variables (API keys)
 - `help.py` - Helper functions and utilities
 - `test_*.py` - Test files for various components
+- `mysearch2.py` - Web search functionality
