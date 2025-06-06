@@ -11,6 +11,9 @@ from rich.prompt import Prompt
 from rich.json import JSON
 from rich.text import Text
 from rich.progress import Progress, SpinnerColumn, TextColumn
+# from help import generate_schema, search_and_scrape
+from help import generate_schema
+from mysearch2 import tavily_context_search
 
 # load dotenv
 from dotenv import load_dotenv
@@ -28,9 +31,6 @@ print(f"Using model: {MODEL_NAME} from {MODEL_BASE_URL}")
 if MODEL_API_KEY:
     print(f"Using API key: {MODEL_API_KEY[:10]}... (truncated for security)")
 
-# from help import generate_schema, search_and_scrape
-from help import generate_schema
-from mysearch2 import tavily_context_search
 
 def my_super_cool_function(x_int, y_int) -> float:
     """Does some cool math and returns a number."""
